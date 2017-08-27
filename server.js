@@ -10,7 +10,6 @@ app.get('/', function (req, res) {
 });
 var articles={
 var articleone : {
-  
   title:'article one',
   heading:'article one',
   date:'3 sep 2017',
@@ -56,8 +55,7 @@ var htmltemplate =`
     <head>
         <title>
             ${title}
-        
-        </title>
+         </title>
         <link href="/ui/style.css" rel="stylesheet" />
         
     </head>
