@@ -9,8 +9,63 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articleone -{
+  title:'Article one|Tushar goyal'  ,
+  heading:'article one',
+  date:'3 sep 2017',
+  content: ` <p>
+                    this is the content of my first article. this is what i want to share in my first article
+                </p>
+                <p>
+                    hope u all like it well.this is the content of my first article. this is what i want to share in my first article
+                </p>
+                <p>
+                    i will share more articles with u also.it well.this is the content of my first article. this is what i want to share in my first article.
+                </p>`
+ };
+function createmplate(data){
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+var htmltemplate -`
+<html>
+    <head>
+        <title>
+            $(title)
+        
+        </title>
+        <link href="/ui/style.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class='container'>
+        <div>
+            <a href='/'>home</a>
+            <hr/>
+            <h3>
+                $(heading)
+                </h3>
+            <div>
+                $(date)
+            </div>    
+            <div>
+                
+               $(content)
+            </div>
+            
+            
+        </div>
+        </div>
+    </body>
+
+`;
+return htmltemplate;
+}
+
+
 app.get('/article-one',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+     res.send(createtemplate(articleone));
 }
 
 );
