@@ -19,16 +19,16 @@ var articles={
                 <p>
                     hope u all like it well.this is the content of my first article. this is what i want to share in my first article
                 </p>
-                <p>
+                <p>`
  }, 
   'article-two':{
       title:'article two|tushar goyal',
   heading:'article two',
   date:'5 sep 2017',
-  content: ` 
+  content: `
   <p>
-            this is the content of my second article.
-                    
+this is the content of my second article.
+           `         
      
  },
   'article-three':{
