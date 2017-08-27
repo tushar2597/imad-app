@@ -25,13 +25,10 @@ var articles={
       title:'article two|tushar goyal',
   heading:'article two',
   date:'5 sep 2017',
-  content: ` <p>
-                    this is the content of my second article.
+  content: ` 
+  <p>
+            this is the content of my second article.
                     
-     `
-     `
-     
-     
      
  },
   'article-three':{
@@ -45,8 +42,7 @@ var articles={
      
      `
      
- }
- 
+ }.
 };
  
  
