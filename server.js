@@ -45,26 +45,19 @@ this is the content of my second article.
  }.
 };
  
- 
- 
- 
- 
- 
- 
- 
 function createtemplate(data){
     var title =data.title;
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-var htmltemplate =`
+var htmltemplate :`
 <html>
     <head>
-        <title>
-              ${title}
-            </title>
+    <title>
+    ${title}
+        </title>
         <link href="/ui/style.css" rel="stylesheet" />
-    </head>
+</head>
     <body>
         <div class='container'>
         <div>
