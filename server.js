@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var articles={
-var articleone = {
+var articleone : {
   
   title:'article one',
   heading:'article one',
@@ -22,7 +22,7 @@ var articleone = {
                 </p>
                 <p>
  }, 
- var articletwo={
+ var articletwo:{
      
      
      
@@ -30,7 +30,7 @@ var articleone = {
      
      
  },
- var articlethree={
+ var articlethree:{
      
      
      
