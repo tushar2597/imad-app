@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var articles={
- articleone : {
+ 'articl-eone': {
  title:'article one|tushar goayl',
   heading:'article one',
   date:'3 sep 2017',
@@ -21,20 +21,20 @@ var articles={
                 </p>
                 <p>
  }, 
-  articletwo:{
+  'article-two':{
       title:'article two|tushar goyal',
   heading:'article two',
   date:'5 sep 2017',
   content: ` <p>
                     this is the content of my second article.
-                    `
+                    
+     `
      `
      
      
      
-     
  },
-  articlethree:{
+  'article-three':{
      
      title:'article three|tushar goyal',
   heading:'article three',
@@ -57,7 +57,7 @@ var articles={
  
  
 function createtemplate(data){
-    var title=data.title;
+    var title =data.title;
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
@@ -66,7 +66,8 @@ var htmltemplate =`
     <head>
         <title>
             ${title}
-         </title>
+            
+            </title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -89,14 +90,17 @@ var htmltemplate =`
         </div>
         </div>
     </body>
-
+</html>
 `;
 return htmltemplate;
 }
 
 
-app.get('/article-one',function(req,res){
-     res.send(createtemplate(articleone));
+app.get('/:articlename',function(req,res){
+//articlename==article-one
+//articles[articlename]==contents for article one
+var articlename=reg.params.articlename;
+     res.send(createtemplate(articles[articlename]));
 }
 
 );
