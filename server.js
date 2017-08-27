@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var articles={
-var articleone : {
-  title:'article one',
+ articleone : {
+ title:'article one|tushar goayl',
   heading:'article one',
   date:'3 sep 2017',
   content: ` <p>
@@ -21,18 +21,29 @@ var articleone : {
                 </p>
                 <p>
  }, 
- var articletwo:{
-     
-     
+  articletwo:{
+      title:'article two|tushar goyal',
+  heading:'article two',
+  date:'5 sep 2017',
+  content: ` <p>
+                    this is the content of my second article.
+                    `
+     `
      
      
      
      
  },
- var articlethree:{
+  articlethree:{
      
+     title:'article three|tushar goyal',
+  heading:'article three',
+  date:'8 sep 2017',
+  content: ` <p>
+                    this is the content of my third article.
+                    `
      
-     
+     `
      
  }
  
@@ -57,7 +68,6 @@ var htmltemplate =`
             ${title}
          </title>
         <link href="/ui/style.css" rel="stylesheet" />
-        
     </head>
     <body>
         <div class='container'>
