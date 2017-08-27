@@ -23,7 +23,7 @@ var articleone ={
                     i will share more articles with u also.it well.this is the content of my first article. this is what i want to share in my first article.
                 </p>`
  };
-function createmplate(data){
+function createtemplate(data){
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
