@@ -8,9 +8,10 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
-var articleone ={
-  title:'Article one|Tushar goyal'  ,
+var articles={
+var articleone = {
+  
+  title:'article one',
   heading:'article one',
   date:'3 sep 2017',
   content: ` <p>
@@ -20,9 +21,31 @@ var articleone ={
                     hope u all like it well.this is the content of my first article. this is what i want to share in my first article
                 </p>
                 <p>
-                    i will share more articles with u also.it well.this is the content of my first article. this is what i want to share in my first article.
-                </p>`
- };
+ }, 
+ var articletwo={
+     
+     
+     
+     
+     
+     
+ },
+ var articlethree={
+     
+     
+     
+     
+ }
+ 
+};
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 function createtemplate(data){
     var title=data.title;
     var date=data.date;
