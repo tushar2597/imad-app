@@ -6,4 +6,4 @@ element.innerHTML="NEW VALUES SET USING JAVASCRIPT";
 var t=document.getElementById("img");
 t.onclick=function(){
     t.style.marginleft='110px';
-}
+};
