@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var articles={
- 'articl-eone': {
+ 'articl-one': {
  title:'article one|tushar goayl',
   heading:'article one',
   date:'3 sep 2017',
@@ -28,7 +28,7 @@ var articles={
   content: `
   <p>
 this is the content of my second article.
-           `         
+       </p>    `        
      
  },
   'article-three':{
@@ -36,13 +36,12 @@ this is the content of my second article.
      title:'article three|tushar goyal',
   heading:'article three',
   date:'8 sep 2017',
-  content: ` <p>
+  content: `<p>
                     this is the content of my third article.
-                    `
+             </p>
+             `
      
-     `
-     
- }.
+  }
 };
  
 function createtemplate(data){
@@ -50,36 +49,40 @@ function createtemplate(data){
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-var htmltemplate =                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          `
+var htmltemplate =   `                                                                         
 <html>
     <head>
-    <title>
-    ${title}
+                <title>${title}
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
-</head>
+        
+    
     <body>
         <div class='container'>
         <div>
             <a href='/'>home</a>
             <hr/>
             <h3>
-                ${heading}
+                {heading}
                 </h3>
             <div>
-                ${date}
+                {date}
             </div>    
             <div>
                 
-               ${content}
+                <p>
+                  {content}
+                </p>
             </div>
             
             
         </div>
         </div>
     </body>
+      </head>            
 </html>
-`;
+`
+;
 return htmltemplate;
 }
 
