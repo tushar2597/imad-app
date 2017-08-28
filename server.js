@@ -87,7 +87,7 @@ return htmltemplate;
 }
 
 
-app.get('/:articlename',function(req,res){
+app.get('/:articlename',function(reg,res){
 //articlename==article-one
 //articles[articlename]==contents for article one
 var articlename=reg.params.articlename;
