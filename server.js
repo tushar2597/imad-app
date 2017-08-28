@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var articles={
- 'articl-one': {
+ 'article-one': {
    title:'article one|tushar goayl',
   heading:'article one',
   date:'3 sep 2017',
