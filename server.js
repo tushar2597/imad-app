@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 var articles={
  'articl-one': {
- title:'article one|tushar goayl',
+   title:'article one|tushar goayl',
   heading:'article one',
   date:'3 sep 2017',
   content: ` <p>
@@ -52,7 +52,8 @@ function createtemplate(data){
 var htmltemplate =   `                                                                         
 <html>
     <head>
-                <title>${title}
+                <title>
+                ${title}
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
         
@@ -95,16 +96,7 @@ var articlename=reg.params.articlename;
 }
 
 );
-app.get('/article-two',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-}
 
-);
-app.get('/article-three',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-}
-
-);
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
