@@ -3,7 +3,13 @@ console.log('Loaded!');
 var element= document.getElementById("maintext");// changing the tewxt using javascript.
 element.innerHTML="NEW VALUES SET USING JAVASCRIPT";
 
-var tus=document.getElementById("tu");
-tus.onclick=function(){
-    tus.style.marginright='110px';
-};
+var img= document.getElementById('image');
+var marginleft=0;
+function moveright(){
+    marginleft=marginleft+10;
+    img.style.marginleft=marginleft+'px';
+}
+img.onclick=function(){
+  var interval=setInterval(moveright,100)  ;
+}
+    
