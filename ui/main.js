@@ -4,6 +4,6 @@ var element= document.getElementById("maintext");// changing the tewxt using jav
 element.innerHTML="NEW VALUES SET USING JAVASCRIPT";
 
 var t=document.getElementById("img");
-t.onclick=function(){
+img.onclick=function(){
     t.style.marginleft='110px';
 };
