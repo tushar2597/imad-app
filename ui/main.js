@@ -5,5 +5,5 @@ element.innerHTML="NEW VALUES SET USING JAVASCRIPT";
 
 var tus=document.getElementById("tu");
 tus.onclick=function(){
-    tus.style.marginleft='110px';
+    tus.style.marginright='110px';
 };
