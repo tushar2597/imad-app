@@ -11,7 +11,11 @@ console.log('Loaded!');
 //t.onclick=function(){
     //image.style.marginLeft='100px';
 //}
-var img= document.getElementById('image');
+
+
+
+// code to move image continuously on click
+//  var img= document.getElementById('image');
 var marginLeft=0;
 function moveRight(){
     marginLeft=marginLeft+10;
