@@ -7,15 +7,15 @@ element.innerHTML="NEW VALUES SET USING JAVASCRIPT";
 
 
 //making the image move
-var t=document.getElementById('image');
-t.onclick=function(){
-    image.style.marginLeft='100px';
-}
+//var t=document.getElementById('image');
+//t.onclick=function(){
+    //image.style.marginLeft='100px';
+//}
 var img= document.getElementById('image');
-var marginleft=0;
+var marginLeft=0;
 function moveright(){
-    marginleft=marginleft+10;
-    img.style.marginleft=marginleft+'px';
+    marginLeft=marginLeft+10;
+    img.style.marginLeft=marginLeft+'px';
 }
 img.onClick=function(){
   var interval=setInterval(moveright,100)  ;
