@@ -13,11 +13,11 @@ element.innerHTML="NEW VALUES SET USING JAVASCRIPT";
 //}
 var img= document.getElementById('image');
 var marginLeft=0;
-function moveright(){
+function moveRight(){
     marginLeft=marginLeft+10;
     img.style.marginLeft=marginLeft+'px';
 }
 img.onClick=function(){
-  var interval=setInterval(moveright,100)  ;
+  var interval=setInterval(moveRight,100)  ;
 };
     
