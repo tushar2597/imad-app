@@ -13,8 +13,8 @@ button.onclick=function(){
         {
             //take some action
             if(request.status===200){
-                var counter=request.responseText;
-                var span=document.getElementById('count');
+                var counter = request.responseText;
+                var span = document.getElementById('count');
                 span.innerHTML=counter.toString();
                 
             }
@@ -22,7 +22,7 @@ button.onclick=function(){
         }
     };
     // make a request
-    request.open('GET', 'http://tushargoyal2597.imad.hasura-app.io/counter',true);
+    request.open('GET', 'https://tushargoyal2597.imad.hasura-app.io/counter',true);
     request.send(null);
     
 };
