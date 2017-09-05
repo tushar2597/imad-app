@@ -5,11 +5,11 @@ button.onclick=function(){
     
    //create a request object
    
-   var request=XMLHttpRequest();
+   var request=new XMLHttpRequest();
    
  
     request.onreadystatechange=function(){
-        if(request.readyStat===XMLHTTPRequest.Done)
+        if(request.readyState===XMLHttpRequest.Done)
         {
             //take some action
             if(request.status===200){
