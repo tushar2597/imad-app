@@ -1,11 +1,11 @@
 body {
     font-family: sans-serif;
-    background-color:white;
+    background-color:lightgrey;
     margin-top: 75px;
 }
 
 .center {
-    text-align:center;
+    text-align:none;
 }
 
 .text-big {
@@ -21,7 +21,7 @@ body {
 }
 .container{
                 max-width:800px;
-                color:black;
+                color:blue;
                 margin:auto;
                 font-family:comic san_ms;
                 padding-top:20px;
