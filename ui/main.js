@@ -4,9 +4,9 @@ console.log('Loaded!');
   var button = document.getElementById('counter');
     var counter=0;
     button.onclick=function(){
-        //make a rseponse to the counter variable
-        //captue tghe rsesponse and store it in variable
-        //render the variable to the correct span.
+                                 //make a rseponse to the counter variable
+                          //captue tghe rsesponse and store it in variable
+                                     //render the variable to the correct span.
          counter = counter+1;
         var span=document.getElemetById('count');
         span.innerHTML=counter.toString();
