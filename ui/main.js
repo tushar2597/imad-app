@@ -28,7 +28,7 @@ img.onclick=function(){
     var counter=0;
                                                         //counter code.
     var button=document.getElementById('counter');
-    botton.onclick=function(){
+    button.onclick=function(){
         //make a rseponse to the counter variable
         //captue tghe rsesponse and store it in variable
         //render the variable to the correct span.
