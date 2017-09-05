@@ -26,14 +26,13 @@ img.onclick=function(){
 };
     
     var counter=0;
-    //counter code.
+                                                        //counter code.
     var button=document.getElementById('counter');
     botton.onclick=function(){
         //make a rseponse to the counter variable
         //captue tghe rsesponse and store it in variable
         //render the variable to the correct span.
-        
-        counter = counter+1;
+         counter = counter+1;
         var span=document.getElemetById('count');
         span.innerHTML=counter.toString();
     };
