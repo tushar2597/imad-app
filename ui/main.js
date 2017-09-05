@@ -8,7 +8,7 @@ console.log('Loaded!');
                           //captue tghe rsesponse and store it in variable
                                      //render the variable to the correct span.
          counter = counter+1;
-        var span=document.getElemetById('count');
+        var span=document.getElementById('count');
         span.innerHTML=counter.toString();
     };
         
