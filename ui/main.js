@@ -36,7 +36,7 @@ img.onclick=function(){
         counter = counter+1;
         var span=document.getElemetById('count');
         span.innerHTML=counter.toString();
-    }
+    };
         
         
         
