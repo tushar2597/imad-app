@@ -25,11 +25,18 @@ img.onclick=function(){
   var interval=setInterval(moveRight,100)  ;
 };
     
-    
+    var counter=0;
     //counter code.
     var button=document.getElementById('counter');
     botton.onclick=function(){
-        //make 
+        //make a rseponse to the counter variable
+        //captue tghe rsesponse and store it in variable
+        //render the variable to the correct span.
+        
+        counter = cointer+1;
+        var span=document.getElemetById('count');
+        span.innerHTML=counter.toString();
+    }
         
         
         
