@@ -22,12 +22,13 @@ console.log('Loaded!');
                                 // img.style.marginLeft=marginLeft +'px';
                             }
                      //img.onclick=function(){
-                             var interval=setInterval(moveRight,100)  ;
+                            // var interval=setInterval(moveRight,100)  ;
                                //                              };
     
-    var counter=0;
+    
                                                         //counter code.
-    var button=document.getElementById('counter');
+    var button = document.getElementById('counter');
+    var counter=0;
     button.onclick=function(){
         //make a rseponse to the counter variable
         //captue tghe rsesponse and store it in variable
