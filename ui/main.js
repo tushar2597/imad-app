@@ -33,7 +33,7 @@ img.onclick=function(){
         //captue tghe rsesponse and store it in variable
         //render the variable to the correct span.
         
-        counter = cointer+1;
+        counter = counter+1;
         var span=document.getElemetById('count');
         span.innerHTML=counter.toString();
     }
